@@ -4,13 +4,23 @@ public class Vector2D extends Vector{
     }
 
     @Override
-    double getLength() {
+    public double getLength() {
         return (double) Math.sqrt(Math.pow(x2 - x1, 2) + Math.pow(y2 - y1, 2));
     }
 
     @Override
-    String getVectorCords() {
-        return (x2 - x1) + ", " + (y2 - y1);
+    public String getVectorCords() {
+        return (x2 - x1) + " " + (y2 - y1);
     }
 
+    public double scalarProduct(Vector2D vector){
+        return (double) this.getLength() * vector.getLength();
+    }
+
+    public double getAngle(Vector2D vector){
+        if(this.getLength() != 0 && vector.getLength() != 0){
+            return this.scalarProduct(vector) / (this.getLength() * vector.getLength());
+        } else
+            return -2.0;
+    }
 }
