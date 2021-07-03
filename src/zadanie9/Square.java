@@ -6,17 +6,17 @@ public class Square extends Quadrangle implements Figure{
     }
 
     @Override
-    double getLargeDiagonal() {
+    public double getLargeDiagonal() {
         return Math.sqrt(2) * a;
     }
 
     @Override
-    double getHeight() {
+    public double getHeight() {
         return a;
     }
 
     @Override
-    String getColor() {
+    public String getColor() {
         return color;
     }
 

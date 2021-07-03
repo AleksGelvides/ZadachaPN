@@ -10,12 +10,12 @@ class Rectangle extends Quadrangle implements Figure {
     }
 
     @Override
-    double getLargeDiagonal() {
+    public double getLargeDiagonal() {
         return Math.sqrt(Math.pow(a,2) + Math.pow(b,2));
     }
 
     @Override
-    double getHeight() {
+    public double getHeight() {
         if(a < b){
             return a;
         } else
@@ -23,7 +23,7 @@ class Rectangle extends Quadrangle implements Figure {
     }
 
     @Override
-    String getColor() {
+    public String getColor() {
         return color;
     }
 

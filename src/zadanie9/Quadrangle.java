@@ -10,9 +10,9 @@ public abstract class Quadrangle {
         this.color = color;
     }
 
-    abstract double getLargeDiagonal();
+    abstract public double getLargeDiagonal();
 
-    abstract double getHeight();
+    abstract public double getHeight();
 
-    abstract String getColor();
+    abstract public String getColor();
 }
